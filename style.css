@@ -1,12 +1,14 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
 }
 
 .bodycontainer {
@@ -15,11 +17,23 @@ body {
 }
 
 .box {
-border: 1px solid lightgray;
+border: 1px solid gray;
 box-sizing: border-box;
 display: inline-block;
 width: 32px;
 height: 32px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+#colorpicker {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .gridContainer {
@@ -32,4 +46,17 @@ height: 1024px;
 
 .gridContainer>div {
 height: 32px;
+}
+
+.slidecontainer,
+.colorpickercontainer,
+.clearcontainer,
+.resetcontainer {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
 }
